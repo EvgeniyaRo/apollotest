@@ -19,7 +19,7 @@ $(document).ready(function() {
 	    
 	});
 
-	// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
+	// При изменении размера окна, в большую сторону, если меню было скрыто, показываем его.
 	$(window).resize(function(){
 	    var w = $(window).width();
 	    if(w > 992) {
@@ -27,6 +27,8 @@ $(document).ready(function() {
 	    }
 	});
 
+
+// Слайдер
 	$("#top-slider").owlCarousel({
 		singleItem: true,
 		navigation: true,
