@@ -82,6 +82,13 @@ body {
   /* 10px * 1.6 = 16px */
   font-family: 'Noto Sans';
 }
+.text-center {
+  text-align: center;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 37px;
+}
 .block {
   background: #FFDB4C;
   padding: 20px;
@@ -374,4 +381,65 @@ body {
 .owl-next {
   right: 0;
   background-image: url('../img/icons/arrow-right.png');
+}
+.benefit-block {
+  padding-bottom: 38px;
+}
+.benefit-block:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 762px) {
+  .benefit-block:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+}
+.benefit-block__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benefit-block__header {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.benefit-block__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.benefit-block__img {
+  margin-bottom: 18px;
+  height: 130px;
+  display: table;
+  width: 100%;
+}
+.benefit-block__img div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.benefit-block__img img {
+  display: inline-block;
+}
+@media (min-width: 1200px) {
+  .benefit-block__img {
+    margin-bottom: 27px;
+  }
+}
+.headding {
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .headding {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
 }
