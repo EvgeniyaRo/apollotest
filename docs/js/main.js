@@ -27,5 +27,12 @@ $(document).ready(function() {
 	    }
 	});
 
+	$("#top-slider").owlCarousel({
+		singleItem: true,
+		navigation: true,
+		theme: "top-slider-theme",
+		navigationText: ["", ""]
+	});
+
 	
 });
