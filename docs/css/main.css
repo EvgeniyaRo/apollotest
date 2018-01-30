@@ -129,9 +129,6 @@ body {
 .line {
   border-top: 1px solid #EAEFF5;
 }
-.footer {
-  background-color: #252525;
-}
 /*========== Mobile First Method  ==========*/
 /* Large Devices, Wide Screens - adaptive styles bofore 1200px */
 /* Medium Devices, Desktops - adaptive styles bofore 992px */
@@ -140,8 +137,13 @@ body {
 /* Custom, iPhone Retina - adaptive styles bofore 320px */
 .logo {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .logo {
+    padding-top: 30px;
+  }
 }
 .logo__name {
   font-size: 33px;
@@ -180,13 +182,21 @@ body {
   text-transform: uppercase;
   box-shadow: 0px 5px 10px 0px #2a496d;
   z-index: 2;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .navigation {
     background-color: #38383a;
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navigation {
+    position: relative;
   }
 }
 .navigation ul {
@@ -196,7 +206,7 @@ body {
   list-style: none;
   justify-content: space-between;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .navigation ul {
     display: flex;
   }
@@ -209,7 +219,7 @@ body {
 .navigation li.active {
   color: #ffcc00;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navigation li {
     border-bottom: none;
     padding: 0;
@@ -228,7 +238,7 @@ body {
 .navigation a:hover {
   color: #ffcc00;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navigation a {
     padding: 0;
     display: inline;
@@ -259,7 +269,7 @@ body {
 .navigation__toggle-button:active {
   background-color: #16385f;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .navigation__toggle-button {
     display: none;
   }
@@ -272,16 +282,16 @@ body {
   padding-right: 0;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container--mobile--no-padding {
     padding-left: 15px;
     padding-right: 15px;
-    width: 767px;
+    width: 976px;
   }
 }
 @media (min-width: 1170px) {
   .container--mobile--no-padding {
-    width: 1170px;
+    width: 1154px;
   }
 }
 .slider {
@@ -628,4 +638,39 @@ body {
 .button--orange:focus {
   background-color: #ffe400;
   color: #000;
+}
+.footer {
+  background-color: #252525;
+}
+.footer p {
+  color: #6c6c6c;
+}
+.footer__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #f7f8f9;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.footer__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #6c6c6c;
+  margin-bottom: 57px;
+}
+.footer__nav li {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.footer__nav a:hover {
+  text-decoration: none;
+  color: #ffc80a;
 }
