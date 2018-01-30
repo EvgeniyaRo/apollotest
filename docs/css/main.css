@@ -532,31 +532,10 @@ body {
   width: 40px;
   height: 40px;
 }
-.my-flex-container {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-@media (min-width: 768px) {
-  .my-flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-}
-@media (min-width: 768px) {
-  .colomn {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left;
-    width: 33.33333333%;
-  }
-}
 .package {
   text-align: center;
   padding-top: 34px;
+  padding-bottom: 47px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 7px;
@@ -589,11 +568,6 @@ body {
 .package__price:after {
   content: "c";
   font-family: 'als_rublregular';
-}
-@media (min-width: 992px) {
-  .package__price {
-    font-size: 48px;
-  }
 }
 .package__period {
   font-size: 12px;
